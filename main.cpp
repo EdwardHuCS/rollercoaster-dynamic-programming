@@ -1,17 +1,27 @@
-// [LAST NAME] [FIRST NAME] [ID NUMBER]
+// Hu Edward 7139472198
 #include <vector>
 #include <utility>
 #include <fstream>
 #include <string>
+#include <algorithm>
 // put other includes here
 using namespace std;
 
 // Please fill in your USC username
-const string USCusername = "ttrojan";
+const string USCusername = "hues";
 
 int maxRollercoasters(vector < pair <int, int> > &RCs)
 {
-	// YOUR CODE HERE
+	sort(RCs.begin(), RCs.end(),
+	[](const pair<int,int> & a, const pair<int,int> & b) -> bool {
+		return a.second < b.second;
+	});
+	cout<<"Should be ordered by time"
+	for_each(RCs.begin(), RCs.end(),
+	[](pair<int,int> a) ->
+	{
+		cout<<"["<<pair.first<<", "<<pair.second<<"]"
+	});
 	return 0;
 }
 
